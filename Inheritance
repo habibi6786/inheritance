@@ -1,0 +1,26 @@
+fun main() {
+    var p=Parent()
+    p.age=67
+    var c=Child1()
+    c.age=14
+    var d=Child2()
+    d.age=20
+    println("${p.age} ${c.age} ${d.age}")
+    }
+ open class Family{
+   var age:Int=0
+   var gender:String=""
+}
+ 
+class Parent:Family(){
+    var occupation:String=""
+   
+}
+
+class Child1:Family(){
+    var hobby:String=""
+}
+
+class Child2:Family(){
+    var hobby:String=""
+}
